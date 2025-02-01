@@ -1,11 +1,5 @@
 # Encapsulation
 
-class Bad_bank_account:
-    def __init__(self,balance):
-        self._balance = balance
-
-
-
 class Bank_account:
     def __init__(self,balance = 0.0):
         self._balance = balance
