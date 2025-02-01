@@ -11,8 +11,7 @@ class User:
     def get_email(self):
         print(f"Email accessed at {datetime.now()}")
         return self._email 
-    
-    
+        
     @property    #More appropriate
     def email(self):
         return self._email
