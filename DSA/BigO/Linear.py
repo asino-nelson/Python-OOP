@@ -1,4 +1,4 @@
-# O(n)
+# Linear Time O(n)
 
 i = 0
 n = 5

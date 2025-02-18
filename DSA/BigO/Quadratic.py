@@ -1,4 +1,4 @@
-# O(n²)
+# Quadratic Time O(n²)
 
 n = [0,1,2,3,4]
 for i in n:
