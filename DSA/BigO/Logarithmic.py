@@ -4,19 +4,22 @@
 # index of a particular value in the array, if it exists. 
 # What is the time complexity of the following algorithm ?
 
+import math
+
 nums = [1,3,4,5,7,9,11,23]
-indx = 4
+target = 33
 
 low = 0
 high = len(nums) - 1
 
-if low <= nums[0] :
-    mid = (high - low)/2
-    if nums[mid] == indx:
-        print(mid)
-    elif nums[mid] < indx:
+while low <= high :
+    mid = math.floor(low + (high - low)// 2)
+    if nums[mid] == target:
+        print(f"Index found : {mid}")
+        break
+    elif nums[mid] < target:
         low = mid + 1
-    elif nums[mid] > indx:
+    else:
         high = mid - 1
-
-print("Index not found")
+else:
+    print("Index not found")
